@@ -4,7 +4,7 @@ import (
 	google_protobuf "github.com/golang/protobuf/ptypes/wrappers"
 )
 
-// GetBool returns nil or the value
+// GetBool returns nil or a pointer to the primitive value
 func GetBool(in *google_protobuf.BoolValue) *bool {
 	if in == nil {
 		return nil
@@ -13,7 +13,7 @@ func GetBool(in *google_protobuf.BoolValue) *bool {
 	return &in.Value
 }
 
-// GetInt32 returns nil or the value
+// GetInt32 returns nil or a pointer to the primitive value
 func GetInt32(in *google_protobuf.Int32Value) *int32 {
 	if in == nil {
 		return nil
@@ -22,7 +22,7 @@ func GetInt32(in *google_protobuf.Int32Value) *int32 {
 	return &in.Value
 }
 
-// GetInt64 returns nil or the value
+// GetInt64 returns nil or a pointer to the primitive value
 func GetInt64(in *google_protobuf.Int64Value) *int64 {
 	if in == nil {
 		return nil
@@ -31,7 +31,7 @@ func GetInt64(in *google_protobuf.Int64Value) *int64 {
 	return &in.Value
 }
 
-// GetFloat returns nil or the value
+// GetFloat returns nil or a pointer to the primitive value
 func GetFloat(in *google_protobuf.FloatValue) *float32 {
 	if in == nil {
 		return nil
@@ -40,7 +40,7 @@ func GetFloat(in *google_protobuf.FloatValue) *float32 {
 	return &in.Value
 }
 
-// GetString returns nil or the value
+// GetString returns nil or a pointer to the primitive value
 func GetString(in *google_protobuf.StringValue) *string {
 	if in == nil {
 		return nil
@@ -49,7 +49,7 @@ func GetString(in *google_protobuf.StringValue) *string {
 	return &in.Value
 }
 
-// GetUInt32 returns nil or the value
+// GetUInt32 returns nil or a pointer to the primitive value
 func GetUInt32(in *google_protobuf.UInt32Value) *uint32 {
 	if in == nil {
 		return nil
@@ -58,7 +58,7 @@ func GetUInt32(in *google_protobuf.UInt32Value) *uint32 {
 	return &in.Value
 }
 
-// GetUInt64 returns nil or the value
+// GetUInt64 returns nil or a pointer to the primitive value
 func GetUInt64(in *google_protobuf.UInt32Value) *uint32 {
 	if in == nil {
 		return nil
@@ -67,7 +67,7 @@ func GetUInt64(in *google_protobuf.UInt32Value) *uint32 {
 	return &in.Value
 }
 
-// GetDouble returns nil or the value
+// GetDouble returns nil or a pointer to the primitive value
 func GetDouble(in *google_protobuf.DoubleValue) *float64 {
 	if in == nil {
 		return nil
@@ -76,7 +76,7 @@ func GetDouble(in *google_protobuf.DoubleValue) *float64 {
 	return &in.Value
 }
 
-// GetBytes returns nil or the value
+// GetBytes returns nil or a pointer to the primitive value
 func GetBytes(in *google_protobuf.BytesValue) *[]byte {
 	if in == nil {
 		return nil
